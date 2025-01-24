@@ -1,6 +1,4 @@
 <script>
-// import Logo from '@/assets/Logo_prisma_sem_fundo.png';
-
 // import {ref, reactive, onMounted} from 'vue';
 
 </script>
@@ -9,7 +7,7 @@
     
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <a class="navbar-brand" href="#">Dashboard PRISMA.EDU</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,15 +19,12 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                             <RouterLink to="/" class="nav-link active" aria-current="page">Home</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="#">Link</a> -->
                             <RouterLink to="/about" class="nav-link active" aria-current="page">About</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="#">Link</a> -->
                             <RouterLink to="/login" class="nav-link active" aria-current="page">Login</RouterLink>
                         </li>
                         <li class="nav-item dropdown">
@@ -55,11 +50,15 @@
         </div>
     </nav>
 
-    <form>
-        <!-- Div com sombra e tamanho ajustado -->
+    
+    
+    <form class="formulario">
+
+        <!-- Div c/ sombra e tamanho ajustado -->
         <div class="shadow p-4 bg-body-tertiary rounded" style="width: 400px;">
+            
             <img src="D:\UFC\NERDS_ProjetoAcadêmico\Front_prismaEdu_\projeto01\projeto-prisma\src\assets\LogoPrisma.png" alt="Logo" class="mx-auto d-block mb-4" style="max-width: 150px; height: auto;">
-            <h1 class="text-center mb-4">Login</h1>
+            <h1 class="text-center mb-4 inter-text">Login</h1>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemplo@gmail.com">
@@ -73,14 +72,27 @@
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            
         </div>
     </form>
-    
+
 </template>
 
 <style scoped>
+.inter-text {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color:rgb(65, 148, 193);
+}
 
+.formulario{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
 </style>

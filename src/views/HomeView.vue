@@ -6,7 +6,7 @@
   <h2>Home</h2>
   <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <a class="navbar-brand" href="#">Dashboard PRISMA.EDU</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,15 +18,12 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                             <RouterLink to="/" class="nav-link active" aria-current="page">Home</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="#">Link</a> -->
                             <RouterLink to="/about" class="nav-link active" aria-current="page">About</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="#">Link</a> -->
                             <RouterLink to="/login" class="nav-link active" aria-current="page">Login</RouterLink>
                         </li>
                         <li class="nav-item dropdown">
